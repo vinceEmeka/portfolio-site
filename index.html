@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vinceDev_</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <!-- NAVBAR=======================================-->
+  <nav>
+    <div class="container nav_container">
+      <a href="index.html">vinceDev_</a>
+      <button class="nav_theme-btn">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- FLOATING NAV=======================================-->
+  <menu class="floating_nav">
+    <a href="#" class="active">
+      <i class="fa-solid fa-house"></i>
+    </a>
+    <a href="#resume">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+    </a>
+    <a href="#projects">
+      <i class="fa-solid fa-briefcase"></i>
+    </a>
+    <a href="#contact">
+      <i class="fa-solid fa-mobile"></i>
+    </a>
+  </menu>
+
+  <!-- HEADER=======================================-->
+  <header>
+    <div class="header_container">
+      <div class="header_image">
+        <img src="./responsive-portfolio-starter-main/assets/avatar1.jpg" alt="header image" />
+      </div>
+      <h5>Hi, I'm Vincent</h5>
+      <h1>Frontend <span>Web Developer</span></h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus,
+        reiciendis deserunt. Esse, earum. Temporibus, nulla?
+      </p>
+      <div class="header_cta">
+        <a href="#projects" class="btn">My Projects</a>
+        <a href="#contact" class="btn primary">Hire me</a>
+      </div>
+
+      <menu class="header_socials">
+        <a href="https://github.com/vinceEmeka"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/drealVinz"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </menu>
+    </div>
+  </header>
+
+  <!-- RESUME======================================= -->
+  <section id="resume">
+    <div class="container resume_container">
+      <div class="resume_left">
+        <h1>Why <span>hire Me?</span> </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+          debitis.
+        </p>
+        <menu>
+          <button class="btn primary experience_btn">Experience</button>
+          <button class="btn education_btn">Education</button>
+          <button class="btn skills_btn">Skills</button>
+          <button class="btn about_btn">About me</button>
+        </menu>
+      </div>
+      <div class="resume_right">
+      </div>
+  </section>
+
+  <!-- PROJECTS =============================================================== -->
+
+  <section class="projects" id="projects">
+
+    <h1>Recent <span>Projects</span> </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error deserunt asperiores a.</p>
+    <menu class="projects_categories">
+      <button class="btn primary" data-filter="*">All</button>
+      <button class="btn" data-filter=".frontend">Frontend</button>
+      <button class="btn" data-filter=".backend">Backend</button>
+      <button class="btn" data-filter=".fullstack">Fullstack</button>
+    </menu>
+    <div class="container projects_container">
+      <article class="project mix fullstack" data-order="1">
+        <div class="project_image">
+          <img src="./responsive-portfolio-starter-main/assets/project1.jpg" alt="">
+        </div>
+        <h5>Project One Title (Fullstack)</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
+          rem?</p>
+        <div class="project_cta">
+          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </article>
+
+      <article class="project mix frontend" data-order="2">
+        <div class="project_image">
+          <img src="./responsive-portfolio-starter-main/assets/project2.jpg" alt="">
+        </div>
+        <h5>Project Two Title (Frontend)</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
+          rem?</p>
+        <div class="project_cta">
+          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </article>
+
+      <article class="project mix fullstack" data-order="3">
+        <div class="project_image">
+          <img src="./responsive-portfolio-starter-main/assets/project3.jpg" alt="">
+        </div>
+        <h5>Project Three Title (Fullstack)</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
+          rem?</p>
+        <div class="project_cta">
+          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </article>
+
+
+      <article class="project mix frontend" data-order="4">
+        <div class="project_image">
+          <img src="./responsive-portfolio-starter-main/assets/project4.jpg" alt="">
+        </div>
+        <h5>Project Four Title (Frontend)</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
+          rem?</p>
+        <div class="project_cta">
+          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </article>
+
+
+      <article class="project mix frontend" data-order="5">
+        <div class="project_image">
+          <img src="./responsive-portfolio-starter-main/assets/project5.jpg" alt="">
+        </div>
+        <h5>Project Five Title (Frontend)</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
+          rem?</p>
+        <div class="project_cta">
+          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </article>
+
+
+      <article class="project mix backend" data-order="6">
+        <div class="project_image">
+          <img src="./responsive-portfolio-starter-main/assets/project6.jpg" alt="">
+        </div>
+        <h5>Project Six Title (Backend)</h5>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
+          rem?</p>
+        <div class="project_cta">
+          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </article>
+
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT SECTION ============================================== -->
+
+  <section id="contact" class="contact" >
+ <h1>Contact <span>me</span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error deserunt asperiores a.</p>
+    <div class="container contact_container">
+     
+      <menu class="contact_options">
+        <a href="mailto:chimezievinz@gmail.com" class="contact_option" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://x.com/drealVinz" class="contact_option" target="_blank">
+
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="mailto:chimezievinz@gmail.com" class="contact_option" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </menu>
+
+      <form action="https://formsubmit.co/chimezievinz@gmail.com" method="post">
+        <input type="text" name="Name" placeholder="Full Name">
+        <input type="email" name="Email" placeholder="Email Address">
+        <textarea rows="7" name="Message" placeholder="Message" ></textarea>
+        <button type="submit" class="btn primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="./responsive-portfolio-starter-main/mix/dist/mixitup.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
