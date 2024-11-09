@@ -195,3 +195,27 @@ let mixer = mixitup(containerEl, {
 
 mixer.filter('*')
 mixer = mixitup(".mixit_active")
+
+
+// ========================= Theme
+
+const themeToggler = document.querySelector(".nav_theme-btn");
+
+
+themeToggler.addEventListener("click", () => {
+
+  document.body.classList.toggle(".dark-theme-variables")
+  if (document.body.className == "") {
+    themeToggler.innerHTML = `<i class="fa-regular fa-moon"></i>`
+    window.localStorage.setItem("portfolio-theme", "")
+  } else {
+    themeToggler.innerHTML = ` <i class="fa-regular fa-sun"></i>`
+    window.localStorage.setItem("portfolio-theme", "dark-theme-variables")
+  }
+});
+
+
+// use saved theme from local storage
+
+const bodyClass = window.localStorage.getItem("portfolio-theme");
+document.body.className = bodyClass;
