@@ -18,30 +18,21 @@ floatingNavs.forEach((nav) => {
 const resumeRight = document.querySelector(".resume_right");
 const experienceContent = ` <h4>Experience</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facere
-            animi assumenda minima consequatur sint!
+            I craft user-friendly interfaces and continuously enhance my skills through learning and problem-solving. I’m driven to create innovative solutions that make the web more engaging and accessible.
           </p>
           <ul>
             <li>
-              <h6>2018 - 2019</h6>
+              <h6>2024 - Present</h6>
               <h5>Intern</h5>
-              <p>Mobile telecom company</p>
+              <p>Genesys Tech Hub</p>
             </li>
             <li>
-              <h6>2019 - 2021</h6>
-              <h5>Freelance Web Designer</h5>
+              <h6>2023 - 2024</h6>
+              <h5>Freelance Frontend Developer</h5>
               <p>Fiverr</p>
             </li>
-            <li>
-              <h6>2021 - 2022</h6>
-              <h5>Frontend Developer</h5>
-              <p>Mobile telecom company</p>
-            </li>
-            <li>
-              <h6>2022 - 2024</h6>
-              <h5>Web Developer</h5>
-              <p>Mobile telecom company</p>
-            </li>
+        
+            
           </ul>`
 
 const experienceBtn = document.querySelector(".experience_btn");
@@ -65,33 +56,26 @@ const educationBtn = document.querySelector(".education_btn");
 const educationContent = `
 <h4>Education</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-            similique reiciendis quas ipsa amet ratione?
+            My commitment to continuous learning drives me to explore new technologies and enhance my problem-solving abilities through data structures and algorithms.
           </p>
 
           <ul>
             <li>
-              <h5>College Education</h5>
+              <h5>freeCodeCamp JavaScript Algorithms and Data Structures (Beta)</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                temporibus assumenda alias nobis facilis laborum ratione beatae
-                possimus aspernatur commodi.
+               I gained practical experience with JavaScript fundamentals, algorithms, and data structures through this course with approximately 300 hours of work. This deepened my problem-solving skills and strengthened my coding expertise.
               </p>
             </li>
             <li>
-              <h5>Cohort</h5>
+              <h5>Genesys Upskill Front-end Development Course</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                temporibus assumenda alias nobis facilis laborum ratione beatae
-                possimus aspernatur commodi.
+                I recently honed my skills through this course, where I worked on projects that reinforced my knowledge of web development fundamentals and modern tools.
               </p>
             </li>
             <li>
-              <h5>freeCodeCamp Education</h5>
+              <h5>freeCodeCamp Responsive Web Design</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                temporibus assumenda alias nobis facilis laborum ratione beatae
-                possimus aspernatur commodi.
+                I gained a solid foundation in building mobile-first, responsive websites.By completing various projects, I refined my skills in structuring web pages that offer an optimal experience for all users.
               </p>
             </li>
           </ul>
@@ -110,16 +94,18 @@ educationBtn.addEventListener("click", () => {
 // SKILLS  ====
 
 const skillscontent = `     <h4>Skills</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <p>I'm skilled in using a range of languages and tools to bring your ideas to life, but I'm always excited to learn and explore new technologies. Staying up-to-date with the latest industry trends is a priority for me, ensuring that I can deliver cutting-edge solutions tailored to your needs</p>
       <ul>
+      <li><img src="./responsive-portfolio-starter-main/assets/image-3.png" alt=""></li>
+      <li><img src="./responsive-portfolio-starter-main/assets/images-css.png" alt=""></li>
+      <li><img src="./responsive-portfolio-starter-main/assets/bootstrap-logos" alt="bootstrap logo"></li>
+      <li><img src="./responsive-portfolio-starter-main/assets/JavaScript-logo.png" alt=""></li>
         <li><img src="./responsive-portfolio-starter-main/assets/react.webp" alt="ReactJS logo"></li>
-        <li><img src="./responsive-portfolio-starter-main/assets/next.png" alt="NextJS logo"></li>
+       <li><img src="./responsive-portfolio-starter-main/assets/5968381.png" alt=""></li>
         <li><img src="./responsive-portfolio-starter-main/assets/tailwind.png" alt=""></li>
-        <li><img src="./responsive-portfolio-starter-main/assets/prisma.png" alt=""></li>
-        <li><img src="./responsive-portfolio-starter-main/assets/mongo.jpg" alt=""></li>
-        <li><img src="./responsive-portfolio-starter-main/assets/jwt.png" alt=""></li>
-        <li><img src="./responsive-portfolio-starter-main/assets/node.png" alt=""></li>
-
+         <li><img src="./responsive-portfolio-starter-main/assets/three-js.png" alt="" width="100%"></li>
+         <li><img src="./responsive-portfolio-starter-main/assets/git.png" alt=""></li>
+          <li><img src="./responsive-portfolio-starter-main/assets/github.webp" alt=""></li>
       </ul>`
 
 const skillsBtn = document.querySelector(".skills_btn");
@@ -138,7 +124,9 @@ skillsBtn.addEventListener("click", () => {
 // About me =====
 
 const aboutContent = `<h4>About me</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, blanditiis officiis. Unde molestias aspernatur porro.</p>
+        <p>My journey in web development began with a fascination for how technology shapes the world, and I've honed my skills in JavaScript, React, and modern front-end frameworks to bring ideas to life. 
+        Whether it's turning complex requirements into user-friendly designs or optimizing performance, I'm driven by the goal of making web experiences that not only look great but also work flawlessly.
+        If you're looking for a dedicated developer who's committed to innovation and collaboration, I'd love to connect. Let's build something amazing together!</p>
         <ul>
           <li>
             <h6>Name:</h6>
@@ -150,7 +138,7 @@ const aboutContent = `<h4>About me</h4>
           </li>
           <li>
             <h6>Email:</h6>
-            <h5>chimezievinz@gmail.com</h5>
+            <h5><a style="color:#1abc9c;" href="mailto:chimezievinz@gmail.com">chimezievinz@gmail.com</a></h5>
           </li>
           <li>
             <h6>Nationality:</h6>
@@ -197,25 +185,107 @@ mixer.filter('*')
 mixer = mixitup(".mixit_active")
 
 
-// ========================= Theme
+// ========================= Theme=================
+let darkmode = localStorage.getItem('darkmode');
 
-const themeToggler = document.querySelector(".nav_theme-btn");
+const themeSwitch = document.getElementById("theme-switch");
+
+const enableDarkmode = () => {
+  document.body.classList.add("darkmode");
+  localStorage.setItem('darkmode', 'active')
+}
+
+const disableDarkmode = () => {
+  document.body.classList.remove('darkmode');
+  localStorage.setItem('darkmode', null)
+}
+themeSwitch.addEventListener('click', () => {
+  darkmode !== "active" ? enableDarkmode() : disableDarkmode()
+})
 
 
-themeToggler.addEventListener("click", () => {
-
-  document.body.classList.toggle(".dark-theme-variables")
-  if (document.body.className == "") {
-    themeToggler.innerHTML = `<i class="fa-regular fa-moon"></i>`
-    window.localStorage.setItem("portfolio-theme", "")
-  } else {
-    themeToggler.innerHTML = ` <i class="fa-regular fa-sun"></i>`
-    window.localStorage.setItem("portfolio-theme", "dark-theme-variables")
-  }
-});
+// const themeToggler = document.querySelector('.nav_theme-btn');
+// themeToggler.addEventListener('click', () => {
+//   document.body.classList.toggle('dark-theme-variables')
+//   if (document.body.classList === '') {
+//     themeToggler.innerHTML = `<i class="fa-regular fa-moon"></i>`
+//   } else {
+//     themeToggler.innerHTML = `<i class="fa-regular fa-sun"></i>`
+//   }
+// });
 
 
-// use saved theme from local storage
+// const themeToggler = document.querySelector('.nav_theme-btn');
 
-const bodyClass = window.localStorage.getItem("portfolio-theme");
-document.body.className = bodyClass;
+// // Add an event listener for the button
+// themeToggler.addEventListener('click', () => {
+//   // Toggle the dark theme class on the body
+//   document.body.classList.toggle('dark-theme-variables');
+
+//   // Check if the dark theme is currently applied
+//   if (document.body.classList.contains('dark-theme-variables')) {
+//     themeToggler.innerHTML = `<i class="fa-regular fa-sun"></i>`;
+//   } else {
+//     themeToggler.innerHTML = `<i class="fa-regular fa-moon"></i>`;
+//   }
+// });
+
+const themeToggler = document.querySelector('.nav_theme-btn');
+
+// Check if the button exists
+if (themeToggler) {
+  themeToggler.addEventListener('click', () => {
+    // Toggle the dark theme class on the body
+    document.body.classList.toggle('dark-theme-variables');
+
+    // Update the icon based on the current theme
+    if (document.body.classList.contains('dark-theme-variables')) {
+      themeToggler.innerHTML = `<i class="fa-regular fa-sun"></i>`;
+    } else {
+      themeToggler.innerHTML = `<i class="fa-regular fa-moon"></i>`;
+    }
+  });
+} else {
+  console.log('Theme toggler button not found!');
+}
+
+
+
+
+
+
+
+//SCROLL FEATURE!
+
+
+
+// Select all sections and navigation links
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".floating_nav > a");
+
+// Function to handle adding/removing the 'active' class
+function activateMenuItem() {
+  let currentSection = "";
+
+  // Loop through sections to find which one is currently in the viewport
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    // Check if the current scroll position is within the section's bounds
+    if (window.scrollY >= sectionTop - sectionHeight / 3) {
+      currentSection = section.getAttribute("id");
+    }
+  });
+
+  // Update the active class on navigation links
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(currentSection)) {
+      link.classList.add("active");
+    }
+  });
+}
+
+// Listen for the scroll event
+window.addEventListener("scroll", activateMenuItem);

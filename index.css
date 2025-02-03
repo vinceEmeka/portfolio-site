@@ -31,7 +31,7 @@
   --transition: all 350ms ease;
 }
 
-.dark-theme-variables {
+.dark-mode {
   --color-gray-0: #0e0d14;
   --color-gray-50: #211f2e;
   --color-gray-100: #252233;
@@ -44,6 +44,7 @@
   --color-gray-800: #fafafa;
   --color-gray-900: #fff;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -62,6 +63,7 @@ body {
   font-size: 0.9rem;
   color: var(--color-gray-800);
   user-select: none;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -181,6 +183,27 @@ nav {
   color: white;
   font-size: 1.3rem;
   cursor: pointer;
+  transition: font-size 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.nav_theme-btn i:last-child {
+  display: none;
+}
+
+.nav_theme-btn:hover {
+  font-size: 1.5rem;
+}
+
+.dark-mode .nav_theme-btn i:first-child {
+  display: none;
+}
+
+.dark-mode .nav_theme-btn i:last-child {
+  display: block;
 }
 
 /* FLOATING NAV STARTS HERE  ==================================*/
@@ -300,6 +323,10 @@ header {
   margin-inline: auto;
   width: fit-content;
   gap: 1rem;
+}
+
+.header_cta a {
+  color: var(--color-gray-900);
 }
 
 .header_socials {
@@ -437,6 +464,12 @@ header {
   justify-content: center;
   margin: 3rem 0 2.5rem;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects_categories button.mixitup-control-active {
+  background: var(--color-primary);
+  color: #fff;
 }
 .projects > h1,
 .projects > p {
@@ -450,6 +483,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 4rem;
+  margin-top: 2rem;
 }
 
 .project {
@@ -562,4 +596,81 @@ form button {
   width: fit-content;
   border: 0;
   padding: 0.8rem 2rem;
+}
+
+/* MEDIA QUERIES (SMALL SCREENS)======================================= */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+  .container {
+    width: var(--container-w-sm);
+  }
+
+  section > h1,
+  section > p {
+    width: var(--container-w-sm);
+  }
+
+  .projects > h1,
+  .projects > p,
+  .contact > h1,
+  .contact > p {
+    width: var(--container-w-sm);
+  }
+
+  nav {
+    height: 4rem;
+  }
+
+  .header_container {
+    width: 90%;
+  }
+
+  .header_image {
+    width: 90%;
+  }
+
+  .header_image img {
+    width: 90%;
+  }
+
+  .header_container p {
+    margin-top: 0.4rem;
+  }
+
+  .header_socials {
+    display: none;
+  }
+
+  .resume_container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .resume_left menu {
+    gap: 0.7rem;
+  }
+
+  .resume_right.resume_right.skills ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .resume_right.resume_right.about ul {
+    grid-template-columns: 1fr;
+  }
+
+  .projects_categories {
+    margin-top: 2.3rem;
+  }
+
+  .projects_container {
+    gap: 1.5rem;
+  }
+
+  form button {
+    width: 100%;
+  }
 }
