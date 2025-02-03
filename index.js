@@ -13,6 +13,66 @@ floatingNavs.forEach((nav) => {
   })
 })
 
+// ACTIVE CLASS FOR THE NAVBARR
+
+// window.addEventListener('scroll', function () {
+
+//   const sections = document.querySelectorAll('section');
+
+
+
+//   for (let section of sections) {
+
+//     const rect = section.getBoundingClientRect();
+
+//     if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+
+//       // Section is visible, add active class
+
+//       section.classList.add('active');
+
+//     } else {
+
+//       // Section is not visible, remove active class
+
+//       section.classList.remove('active');
+
+//     }
+
+//   }
+
+// });
+
+
+document.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+  let currentSection = null;
+
+  sections.forEach((section) => {
+    const top = section.getBoundingClientRect().top;
+    if (top >= 0 && top < window.innerHeight * 0.5) {
+      currentSection = section;
+    }
+  });
+
+  // Remove active class from all links
+  navLinks.forEach((link) => link.classList.remove("active"));
+
+  // If at the top of the page, activate the Home link
+  if (window.scrollY === 0) {
+    document.querySelector(`.nav-link[href="#"]`).classList.add("active");
+  } else if (currentSection) {
+    document
+      .querySelector(`.nav-link[href="#${currentSection.id}"]`)
+      .classList.add("active");
+  }
+});
+
+
+
+
+
 // RESUME =================
 
 const resumeRight = document.querySelector(".resume_right");

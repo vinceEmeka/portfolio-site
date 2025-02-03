@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>vinceDev_</title>
+  <link rel="icon" type="image/x-icon" href="/images/icons8-portfolio-50.png">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -28,31 +29,31 @@
   <nav >
     <div class="container nav_container">
       <a href="index.html">vinceDev_</a>
-      <button class="nav_theme-btn" id="theme-switch">
+      <!-- <button class="nav_theme-btn" id="theme-switch">
       <i class="fa-regular fa-moon"></i>
       <i class="fa-solid fa-sun"></i>
-  </button>
+  </button> -->
     </div>
   </nav>
 
   <!-- FLOATING NAV=======================================-->
   <menu class="floating_nav">
-    <a href="#" class="active">
+    <a class = "nav-link active" href="#">
       <i class="fa-solid fa-house"></i>
     </a>
-    <a href="#resume">
+    <a class = "nav-link" href="#resume">
       <i class="fa-solid fa-screwdriver-wrench"></i>
     </a>
-    <a href="#projects">
+    <a class = "nav-link" href="#projects">
       <i class="fa-solid fa-briefcase"></i>
     </a>
-    <a href="#contact">
+    <a class = "nav-link" href="#contact">
       <i class="fa-solid fa-mobile"></i>
     </a>
   </menu>
 
   <!-- HEADER=======================================-->
-  <header>
+  <header id="header">
     <div class="header_container">
       <div class="header_image" data-aos="fade-up" data-aos-delay="800">
         <img src="./responsive-portfolio-starter-main/assets/IMG_9508-removebg-preview (1).png" alt="header image" />
@@ -68,9 +69,11 @@
       </div>
 
       <menu class="header_socials">
-        <a href="https://github.com/vinceEmeka"><i class="fa-brands fa-github"></i></a>
-        <a href="https://x.com/drealVinz"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/vinceEmeka" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/drealVinz" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+         <a href="mailto:chimezievinz@gmail.com" class="contact_option" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a> 
       </menu>
     </div>
   </header>
@@ -112,80 +115,74 @@
         <div class="project_image">
           <img src="./responsive-portfolio-starter-main/assets/u clone.png" alt="">
         </div>
-        <h5>Project One Title (Fullstack)</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
-          rem?</p>
+        <h5>Responsive Youtube Clone<!--(Fullstack) --></h5>  
+        <p>This project is a simple YouTube Clone built using only HTML and CSS. It replicates the core layout of YouTube, including a responsive video player section, sidebar navigation, and video grid.</p>
         <div class="project_cta">
-          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
-          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://youtube-clone-gamma-umber.vercel.app/" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka/Youtube-clone" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
       </article>
 
       <article class="project mix frontend" data-order="2">
         <div class="project_image">
-          <img src="./responsive-portfolio-starter-main/assets/project2.jpg" alt="">
+          <img src="./responsive-portfolio-starter-main/assets/croped app.png" alt="">
         </div>
-        <h5>Project Two Title (Frontend)</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
-          rem?</p>
+        <h5>Crypto Price Tracker </h5>
+        <p>The Crypto Price Tracker is a web app built with HTML, CSS, and JavaScript that fetches real-time cryptocurrency data from an API. The app features pagination, showing 10 coins per page with a Next button to navigate through more coins.</p>
         <div class="project_cta">
-          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
-          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://norebase-test.vercel.app/" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka/Norebase-test" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
       </article>
 
       <article class="project mix fullstack" data-order="3">
         <div class="project_image">
-          <img src="./responsive-portfolio-starter-main/assets/project3.jpg" alt="">
+          <img src="./responsive-portfolio-starter-main/assets/valu app.png" alt="">
         </div>
-        <h5>Project Three Title (Fullstack)</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
-          rem?</p>
+        <h5>Valutico Business App</h5>
+        <p>Developed a pixel-perfect, responsive UI for Valutico by converting a Figma design into clean, functional code using HTML, CSS, and JavaScript. The project showcases expertise in design translation, responsiveness, and attention to detail.</p>
         <div class="project_cta">
-          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
-          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://valutico-nine.vercel.app/" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka/FINAL-PROJECT" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
       </article>
 
 
       <article class="project mix frontend" data-order="4">
         <div class="project_image">
-          <img src="./responsive-portfolio-starter-main/assets/project4.jpg" alt="">
+          <img src="./responsive-portfolio-starter-main/assets/foodieline app.png" alt="">
         </div>
-        <h5>Project Four Title (Frontend)</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
-          rem?</p>
+        <h5>Foodieline Recipe Website</h5>
+        <p>Converted a Figma design into a functional recipe website using HTML, CSS, and JavaScript. The implementation closely follows the provided design, ensuring pixel-perfect accuracy. Since no responsive version was provided, the layout remains fixed as per the design specifications.</p>
         <div class="project_cta">
-          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
-          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://foodieland-ebon.vercel.app/index.html" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka/Foodieland" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
       </article>
 
 
       <article class="project mix frontend" data-order="5">
         <div class="project_image">
-          <img src="./responsive-portfolio-starter-main/assets/project5.jpg" alt="">
+          <img src="./responsive-portfolio-starter-main/assets/mine app.png" alt="">
         </div>
-        <h5>Project Five Title (Frontend)</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
-          rem?</p>
+        <h5>Web Dev Portfolio</h5>
+        <p>Built a personal portfolio website by coding along with a YouTube tutorial, using HTML, CSS, and JavaScript. The project showcases skills in frontend development, layout design, and styling, providing a clean and professional presentation of projects and skills.</p>
         <div class="project_cta">
-          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
-          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://portfolio-demo-sand.vercel.app/" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka/mine" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
       </article>
 
 
       <article class="project mix backend" data-order="6">
         <div class="project_image">
-          <img src="./responsive-portfolio-starter-main/assets/project6.jpg" alt="">
+          <img src="./responsive-portfolio-starter-main/assets/music app.png" alt="">
         </div>
-        <h5>Project Six Title (Backend)</h5>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt obcaecati facilis autem molestias, omnis
-          rem?</p>
+        <h5>Music Player App</h5>
+        <p>Built a Music Player App as part of the freeCodeCamp certification projects, using HTML, CSS, and JavaScript. The app features audio playback controls, a dynamic UI, and interactive elements, demonstrating skills in DOM manipulation, event handling, and CSS styling.</p>
         <div class="project_cta">
-          <a href="https://google.com" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
-          <a href="https://github.com/vinceEmeka" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://music-app-smoky-chi.vercel.app/" class="btn primary" target="_blank"><i class="fa-solid fa-link"></i></a>
+          <a href="https://github.com/vinceEmeka/music-app" class="btn " target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
       </article>
 
@@ -209,9 +206,9 @@
 
           <i class="fa-brands fa-x-twitter"></i>
         </a>
-        <a href="mailto:chimezievinz@gmail.com" class="contact_option" target="_blank">
+        <!-- <a href="mailto:chimezievinz@gmail.com" class="contact_option" target="_blank">
           <i class="fa-brands fa-linkedin"></i>
-        </a>
+        </a> -->
       </menu>
 
       <form action="https://formsubmit.co/chimezievinz@gmail.com" method="post" data-aos="fade-up">
